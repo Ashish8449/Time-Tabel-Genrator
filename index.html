@@ -17,19 +17,83 @@
     <title>Time Table Genrator</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid mb-3">
       <h2 class="m-auto text-center mt-4">Information Technology</h2>
       <h2 class="m-auto text-center">Seconde Year</h2>
       <div
-        class="timeTabelContainer container-fluid border border-3 border-danger"
+        class="
+          timeTabelContainer
+          container-fluid
+          mt-4
+          border border-3 border-danger
+        "
       >
-        this is my time tabel container
+        <div class="row g-3 m-auto align-content-around">
+          <div class="col-3 border mx-2 border-3 fw-bold fs-2">Day</div>
+          <div class="col-2 border mx-2 fw-bold fs-2 border-3">
+            9:00 to 10:00
+          </div>
+          <div class="col-2 border mx-2 fw-bold fs-2 border-3">
+            10:00 to 11:00
+          </div>
+          <div class="col-2 border mx-2 fw-bold fs-2 border-3">
+            11:00 to 12:00
+          </div>
+          <div class="col-2 border mx-2 fw-bold fs-2 border-3">
+            12:00 to 1:00
+          </div>
+        </div>
+        <div class="row g-3 m-auto align-content-around">
+          <div class="col-3 border mx-2 border-3 fw-bold fs-2">Monday</div>
+          <div class="col-2 border mx-2 border-3" id="div01"></div>
+          <div class="col-2 border mx-2 border-3" id="div02"></div>
+          <div class="col-2 border mx-2 border-3" id="div03"></div>
+          <div class="col-2 border mx-2 border-3" id="div04"></div>
+        </div>
+        <div class="row g-3 m-auto align-content-around">
+          <div class="col-3 border mx-2 border-3 fw-bold fs-2" id="">
+            Tuesday
+          </div>
+          <div class="col-2 border mx-2 border-3" id="div11"></div>
+          <div class="col-2 border mx-2 border-3" id="div12"></div>
+          <div class="col-2 border mx-2 border-3" id="div13"></div>
+          <div class="col-2 border mx-2 border-3" id="div14"></div>
+        </div>
+        <div class="row g-3 m-auto align-content-around">
+          <div class="col-3 border mx-2 border-3 fw-bold fs-2">Wednesday</div>
+          <div class="col-2 border mx-2 border-3" id="div21"></div>
+          <div class="col-2 border mx-2 border-3" id="div22"></div>
+          <div class="col-2 border mx-2 border-3" id="div23"></div>
+          <div class="col-2 border mx-2 border-3" id="div24"></div>
+        </div>
+        <div class="row g-3 m-auto align-content-around">
+          <div class="col-3 border mx-2 border-3 fw-bold fs-2">Thursday</div>
+          <div class="col-2 border mx-2 border-3" id="div31"></div>
+          <div class="col-2 border mx-2 border-3" id="div32"></div>
+          <div class="col-2 border mx-2 border-3" id="div33"></div>
+          <div class="col-2 border mx-2 border-3" id="div34"></div>
+        </div>
+        <div class="row g-3 m-auto align-content-around">
+          <div class="col-3 border mx-2 border-3 fw-bold fs-2">Friday</div>
+          <div class="col-2 border mx-2 border-3" id="div41"></div>
+          <div class="col-2 border mx-2 border-3" id="div42"></div>
+          <div class="col-2 border mx-2 border-3" id="div43"></div>
+          <div class="col-2 border mx-2 border-3" id="div44"></div>
+        </div>
+        <div class="row g-3 m-auto align-content-around">
+          <div class="col-3 border mx-2 border-3 fw-bold fs-2">Saturday</div>
+          <div class="col-2 border mx-2 border-3" id="div51"></div>
+          <div class="col-2 border mx-2 border-3" id="div52"></div>
+          <div class="col-2 border mx-2 border-3" id="div53"></div>
+          <div class="col-2 border mx-2 border-3" id="div54"></div>
+        </div>
       </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
