@@ -6,26 +6,26 @@ const Data = [
   },
   {
     subjectNaem: "Probability & Statistics",
-    subjectCode: "TIT -233",
+    subjectCode: "BPS-288",
     roomNo: 202,
   },
   {
     subjectNaem: "Digital Electronics",
-    subjectCode: "TIT -233",
+    subjectCode: "TIT -238",
     roomNo: 202,
   },
   {
     subjectNaem: "Foundations of Information Technology",
-    subjectCode: "TIT -233",
+    subjectCode: "TIT -236",
     roomNo: 202,
   },
   {
     subjectNaem: "English",
-    subjectCode: "TIT -233",
+    subjectCode: "TIT -234",
     roomNo: 202,
   },
   {
-    subjectNaem: "Formal Lang",
+    subjectNaem: "Formal Language ",
     subjectCode: "TIT -233",
     roomNo: 202,
   },
@@ -34,7 +34,8 @@ const Data = [
 addEventListener("load", () => {
   let count = 0;
 
-  const map = {};
+  const map = {},
+    mapval2 = {};
 
   while (count < 18) {
     Data.forEach((val) => {
@@ -46,11 +47,13 @@ addEventListener("load", () => {
       key += val1;
       key += val2;
       console.log(key);
-      if (map[key]) {
-        console.log("yeehndkdjfkdfjkdfjkjip");
+      let keyForDif = val1 + `${val.subjectCode}`;
+      if (map[key] || mapval2[keyForDif]) {
+        // console.log("yeehndkdjfkdfjkdfjkjip");
       } else {
-        console.log(val1 + val2);
+        console.log(" val2  " + `${val2}`);
         map[key] = 1;
+        mapval2[keyForDif] = 1;
         count++;
         const element = document.querySelector(`#div${key}`);
         console.log(element);
